@@ -13,17 +13,16 @@ use_testthat()
 use_travis()
 
 #init tests
-use_test("bind")
-use_test("islemme")
-use_test("counter")
 
 # init vignette
 use_vignette("getting started")
-build_vignettes()
+
 
 # dependencies
-use_package("dplyr")
-use_package("rlang")
+use_package("crayon")
+use_package("glue")
+use_package("purrr")
+use_package("rstudioapi")
 
 # run tests
 
