@@ -44,8 +44,19 @@ load(b)
 How do I know the job is finished?
 ----------------------------------
 
-As stated, this package is still under dev, and so far notication is still a part I'm working on. If like me you're on Ubuntu and / or on a recent MacOS, the notification process will work and you'll get a message stating the job is complete. If you're on windows, I have for the moment no idea how to push notifications ¯\_(ツ)\_/¯
+As stated, this package is still under dev, and so far notications is still a part I'm working on. If like me you're on Ubuntu and / or on a recent MacOS, the notification process should work and you'll get a message stating the job is complete.
 
 ![](aside_completed.png)
+
+You can also watch over the process by opening the terminal with:
+
+``` r
+aside("a <- 12", show = TRUE)
+```
+
+Windows users
+-------------
+
+If you're on windows, I have for the moment not implemented aside. Sorry ¯\\*(ツ)*/¯
 
 If you're not happy with that, feel free to send me a [PR](https://github.com/ColinFay/aside/pulls) or to open an [issue](https://github.com/ColinFay/aside/issues).
