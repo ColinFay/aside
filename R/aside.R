@@ -2,6 +2,11 @@
 #'
 #' Send the job aside
 #'
+#' @importFrom glue glue
+#' @import crayon
+#' @import rstudioapi
+#' @importFrom purrr map
+#'
 #' @param cmd the cmd to send
 #' @param show wether or not to show the terminal
 #'

@@ -2,4 +2,8 @@
 
 export(aside)
 export(asider)
+import(crayon)
+import(rstudioapi)
+importFrom(glue,glue)
+importFrom(purrr,map)
 importFrom(rstudioapi,getSourceEditorContext)
