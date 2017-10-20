@@ -1,0 +1,9 @@
+Package: aside
+Title: Send a long R job to be run aside 
+Version: 0.0.0.9000
+Authors@R: person("Colin", "Fay", email = "contact@colinfay.me", role = c("aut", "cre"))
+Description: Send a job to be run aside your current RStudio session. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
