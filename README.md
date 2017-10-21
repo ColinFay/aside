@@ -8,6 +8,8 @@ aside
 
 Have you ever been waiting in front of you R session from a command to finish? Say goodbye to wasted time with {aside}, an RStudio addin running commands aside and sending you the result in a temp file.
 
+![](aside.gif)
+
 How it works
 ------------
 
@@ -38,8 +40,6 @@ You can simply:
 ``` r
 load(b)
 ```
-
-![](aside.gif)
 
 How do I know the job is finished?
 ----------------------------------
