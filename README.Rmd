@@ -56,7 +56,7 @@ load(b)
 
 ## How do I know the job is finished?
 
-As stated, this package is still under dev, and so far notications is still a part I'm working on. If like me you're on Ubuntu, the notification process should work and you'll get a message stating the job is complete.
+As stated, this package is still under dev, and so far notications is still a part I'm working on. If like me you're on Ubuntu and / or on a recent Mac OSX, the notification process should work and you'll get a message stating the job is complete.
 
 ![](aside_completed.png)
 
