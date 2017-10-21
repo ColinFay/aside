@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 An RStudio addin to run long R commands aside your current session. 
 
-This package is more of a POC for now, really to be considered as a WIP. Feel free to open issue or send pull requests! For now, it seems that this addin only works on Linux and Mac OS, but I'm working on this :) 
+This package is more of a POC for now, really to be considered as a WIP. Feel free to open issue or send pull requests! For now, this addin only works on Linux and Mac OS, but I'm working on this :) 
 
 # aside
 
