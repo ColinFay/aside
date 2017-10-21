@@ -20,7 +20,7 @@ aside("a <- 12")
 
 And the command will be run in a new R session in the background. But the biggest strength of {aside} is that you can select the line in your script, and clic Addins &gt; ASIDE &gt; aside. Yes, that means you can also map it to a keyboard shortcut \\o/.
 
-![](addin.png)
+![](asideaddin.gif)
 
 Aside in practice
 -----------------
