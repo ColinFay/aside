@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 An RStudio addin to run long R commands aside your current session. 
 
-This package is more of a POC for now, really to be considered as a WIP. Feel free to open issue or send pull requests! For now, it seems that this addin only works on Linux, but I'm working on this :) 
+This package is more of a POC for now, really to be considered as a WIP. Feel free to open issue or send pull requests! For now, it seems that this addin only works on Linux and Mac OS, but I'm working on this :) 
 
 # aside
 
@@ -31,8 +31,6 @@ You can simply write a function like:
 library(aside)
 aside("a <- 12")
 ```
-
-![](aside.gif)
 
 And the command will be run in a new R session in the background. But the biggest strength of {aside} is that you can select the line in your script, and clic Addins > ASIDE > aside. Yes, that means you can also map it to a keyboard shortcut \\o/. 
 
@@ -54,11 +52,13 @@ You can simply:
 load(b)
 ```
 
+![](aside.gif)
+
 ## How do I know the job is finished?
 
 As stated, this package is still under dev, and so far notications is still a part I'm working on. If like me you're on Ubuntu, the notification process should work and you'll get a message stating the job is complete.
 
-![](aside_addin.gif)
+![](aside_completed.png)
 
 You can also watch over the process by opening the terminal with:
 
