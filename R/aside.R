@@ -15,10 +15,11 @@
 #'
 
 aside <- function(cmd, show = FALSE){
+  # Check system info
   os <- Sys.info()[["sysname"]]
+
   # Save object from global env
   file <- glue("{tempfile()}.Rda")
-  #return(ls(all.names = TRUE, envir = .GlobalEnv))
   save(list = ls(all.names = TRUE, envir = .GlobalEnv),
        file = file,
        envir = .GlobalEnv)
@@ -26,6 +27,7 @@ aside <- function(cmd, show = FALSE){
 
   pkg <- search()[grep(pattern = "package:", search())]
   pkg <- gsub("package:", "", pkg)
+  pkg <- rev(pkg)
 
   # Opens a terminal launching R
 
@@ -35,6 +37,7 @@ aside <- function(cmd, show = FALSE){
   } else {
     return("{aside} is not implemented for your OS yet")
   }
+
   cat(green$bold(paste0("Job sent to ",a,"\n")))
   map(pkg, ~terminalSend(id = a, text = paste0("library(",.x,")\n")))
   terminalSend(a, paste0("load(\"",file,"\")\n"))
