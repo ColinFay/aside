@@ -53,7 +53,7 @@ aside <- function(cmd, show = FALSE){
   if (os == "Linux"){
     terminalSend(a, 'try(system(\'notify-send "Aside job completed"\'))\n')
   } else if (os == "Darwin"){
-    terminalSend(a, 'try(system(\'osascript -e \'display notification "Aside job completed" with title "R"\'\'))\n')
+    terminalSend(a, 'try(system(\'osascript -e \\\'display notification "Aside job completed" with title "R"\\\'\'))\n')
   }
   if (show) {
     cat(green(glue('\nOutput will be saved at "{file}".\nUse load("{file}") when job is completed to load the results, or open {a} to see the results in the console.')))
