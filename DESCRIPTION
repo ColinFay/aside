@@ -11,3 +11,4 @@ Imports: crayon,
     glue,
     purrr,
     rstudioapi
+Suggests: beepr
