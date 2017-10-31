@@ -54,6 +54,11 @@ You can also watch over the process by opening the terminal with:
 aside("a <- 12", show = TRUE)
 ```
 
+If you're a fan of annoying notification sounds, you can also use (best with [beepr](https://cran.r-project.org/web/packages/beepr/index.html) installed)
+``` r
+aside("a <- 12", beep = TRUE)
+```
+
 Windows users
 -------------
 

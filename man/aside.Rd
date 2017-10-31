@@ -4,12 +4,14 @@
 \alias{aside}
 \title{Aside}
 \usage{
-aside(cmd, show = FALSE)
+aside(cmd, show = FALSE, beep = FALSE)
 }
 \arguments{
 \item{cmd}{the cmd to send}
 
-\item{show}{wether or not to show the terminal}
+\item{show}{whether or not to show the terminal}
+
+\item{beep}{whether or not to play a sound when the job is done, using the beepr package when available.}
 }
 \value{
 a job well done

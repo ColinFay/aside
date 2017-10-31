@@ -8,13 +8,14 @@
 #' @importFrom purrr map
 #'
 #' @param cmd the cmd to send
-#' @param show wether or not to show the terminal
+#' @param show whether or not to show the terminal
+#' @param beep whether or not to play a sound when the job is done, using the beepr package when available.
 #'
 #' @return a job well done
 #' @export
 #'
 
-aside <- function(cmd, show = FALSE){
+aside <- function(cmd, show = FALSE, beep = FALSE) {
   # Check system info
   os <- Sys.info()[["sysname"]]
 
@@ -50,6 +51,9 @@ aside <- function(cmd, show = FALSE){
 
   terminalSend(a, paste0('save(list = ls(all.names = TRUE, envir = .GlobalEnv),file = "',file,'",envir = .GlobalEnv) \n'))
 
+  if (beep) {
+    terminalSend(a, 'if (requireNamespace("beepr", quietly = TRUE)) beepr::beep() else alarm()\n')
+  }
   if (os == "Linux"){
     terminalSend(a, 'try(system(\'notify-send "Aside job completed"\'))\n')
   } else if (os == "Darwin"){
